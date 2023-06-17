@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+.image-scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  /* ปรับขนาดภาพพื้นหลังสำหรับหน้าจอขนาดเล็กกว่าหรือเท่ากับ 768px */
+  .h-screen {
+    backgroundSize: contain;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ปรับขนาดภาพพื้นหลังสำหรับหน้าจอขนาดตั้งแต่ 769px ถึง 1024px */
+  .h-screen {
+    backgroundSize: cover;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* ปรับขนาดภาพพื้นหลังสำหรับหน้าจอขนาดมากกว่าหรือเท่ากับ 1025px */
+  .h-screen {
+    backgroundSize: cover;
+  }
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px white;
+  text-stroke: 3px white;
+}
+@media (min-width: 640px) {
+  .text-stroke-white {
+    -webkit-text-stroke: 3px white;
+    text-stroke: 3px white;
+  }
+}
+.text-stroke-white1 {
+  -webkit-text-stroke: 2.5px #B31E1E;
+  text-stroke: 3px #B31E1E;
+}
+@media (min-width: 640px) {
+  .text-stroke-white1 {
+    -webkit-text-stroke: 3.7px #B31E1E;
+    text-stroke: 3px #B31E1E;
+  }
+}
+.text-stroke-white2 {
+  -webkit-text-stroke: 1px white;
+  text-stroke: 3px white;
+}
+@media (min-width: 640px) {
+  .text-stroke-white2 {
+    -webkit-text-stroke: 3px white;
+    text-stroke: 3px white;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(179.2deg, #FFB72B 35.04%, #E3BF7B 57.11%, #CB8E19 75.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient1 {
+  background: linear-gradient(179.2deg, #FFDA25 65.04%, #FBF5A7 50.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient2 {
+  /* background: linear-gradient(178.5deg, rgba(164,21,11,1) 39%, rgba(181,35,25,1) 50%, rgba(204,0,0,1) 56%, rgba(246,197,188,1) 58%, rgba(236,13,13,1) 64%); */
+  background: linear-gradient(179deg, rgba(177,5,5,1) 0%, rgba(255,17,0,1) 17%, rgba(214,19,6,1) 52%, rgba(255,184,172,1) 60%, rgba(187,12,0,1) 63%, rgba(125,1,1,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
